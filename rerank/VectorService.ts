@@ -34,6 +34,10 @@ export class VectorService {
     if (!collections.collections.some(c => c.name === name)) {
       await this.ensureCollection(name);
       await this.addPoints(name, points);
+      await this.client.createPayloadIndex(name, {
+        field_name: 'author',
+        field_schema: 'keyword'
+      })
     }
   }
 

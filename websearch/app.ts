@@ -24,6 +24,7 @@ const allowedDomains = [
   { name: 'Instagram', url: 'instagram.com', scrappable: false },
   { name: 'OpenAI', url: 'openai.com', scrappable: true },
   { name: 'Brain overment', url: 'brain.overment.com', scrappable: true },
+  { name: 'Mrugalski', url: 'mrugalski.pl', scrappable: true },
 ];
 
 /*
